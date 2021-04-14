@@ -87,6 +87,17 @@ app_license = "MIT"
 # 	"ToDo": "custom_app.overrides.CustomToDo"
 # }
 
+
+override_doctype_class = {
+	"Customer": "amaze_custom.amaze_custom.customize.ERPNextCustomer",
+	"Contact": "amaze_custom.amaze_custom.customize.ERPNextContact"
+}
+
+doc_events = {
+	"Supplier": {
+		"after_insert": "amaze_custom.amaze_custom.customize.update_supplier_contact"
+	}
+}
 # Document Events
 # ---------------
 # Hook on document methods and events
