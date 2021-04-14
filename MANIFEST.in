@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include amaze_custom *.css
+recursive-include amaze_custom *.csv
+recursive-include amaze_custom *.html
+recursive-include amaze_custom *.ico
+recursive-include amaze_custom *.js
+recursive-include amaze_custom *.json
+recursive-include amaze_custom *.md
+recursive-include amaze_custom *.png
+recursive-include amaze_custom *.py
+recursive-include amaze_custom *.svg
+recursive-include amaze_custom *.txt
+recursive-exclude amaze_custom *.pyc
